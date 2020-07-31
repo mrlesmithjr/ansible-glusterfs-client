@@ -1,3 +1,15 @@
+commit 874d801444ae999fd8b1965c8dc8224deea39199
+Author: Larry Smith Jr <mrlesmithjr@gmail.com>
+Date:   Fri Jul 31 00:27:11 2020 -0400
+
+    Updated Galaxy meta
+
+commit 114d0dfd89209de94b2f7d0d407ab915bb96a778
+Author: Larry Smith Jr <mrlesmithjr@gmail.com>
+Date:   Fri Jul 31 00:20:42 2020 -0400
+
+    Fixing Debian pre-reqs
+
 commit 657538ecb85e220513f62c458cb59cdd398b483c
 Author: Larry Smith Jr <mrlesmithjr@gmail.com>
 Date:   Fri Jul 31 00:11:48 2020 -0400
