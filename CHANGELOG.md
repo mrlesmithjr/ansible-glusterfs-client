@@ -1,3 +1,15 @@
+commit 54d785ed931b2e5ad48ac67e9fe6adad983af5f6
+Author: Larry Smith Jr <mrlesmithjr@gmail.com>
+Date:   Fri Jul 31 13:10:18 2020 -0400
+
+    Fixing Debian repo issues
+
+commit 5bf50200ad45556fe3394282fbaf8bd5c20934d3
+Author: Larry Smith Jr <mrlesmithjr@gmail.com>
+Date:   Fri Jul 31 00:41:28 2020 -0400
+
+    Fixed Debian repo
+
 commit c75ae6fd742ffd20bf4f0f3eedc855d1e69cd163
 Author: Larry Smith Jr <mrlesmithjr@gmail.com>
 Date:   Fri Jul 31 00:27:19 2020 -0400
