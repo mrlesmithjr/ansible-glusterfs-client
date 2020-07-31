@@ -1,3 +1,9 @@
+commit c75ae6fd742ffd20bf4f0f3eedc855d1e69cd163
+Author: Larry Smith Jr <mrlesmithjr@gmail.com>
+Date:   Fri Jul 31 00:27:19 2020 -0400
+
+    Fixed linting
+
 commit 874d801444ae999fd8b1965c8dc8224deea39199
 Author: Larry Smith Jr <mrlesmithjr@gmail.com>
 Date:   Fri Jul 31 00:27:11 2020 -0400
