@@ -1,0 +1,10 @@
+---
+- name: config | Managing GlusterFS Mounts
+  mount:
+    name: "{{ item.mountpoint }}"
+    src: "{{ item.src }}"
+    fstype: "{{ item.fstype }}"
+    opts: "{{ item.opts }}"
+    state: "{{ item.state }}"
+  become: true
+  loop: "{{ glusterfs_client_mounts }}"

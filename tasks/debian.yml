@@ -1,0 +1,41 @@
+---
+- name: debian | Updating APT Cache
+  apt:
+    update_cache: true
+  become: true
+
+- name: debian | Installing Pre-Reqs
+  apt:
+    name:
+      - gnupg
+      - software-properties-common
+    state: present
+  become: true
+  when: ansible_distribution == "Ubuntu"
+
+- name: debian | Adding GlusterFS Repo
+  apt_repository:
+    repo: ppa:gluster/glusterfs-7
+    state: present
+  become: true
+  when: ansible_distribution == "Ubuntu"
+
+- name: debian | Adding GlusterFS Repo Key
+  apt_key:
+    url: https://download.gluster.org/pub/gluster/glusterfs/7/rsa.pub
+    state: present
+  become: true
+  when: ansible_distribution == "Debian"
+
+- name: debian | Adding GlusterFS Repo
+  apt_repository:
+    repo: "deb http://download.gluster.org/pub/gluster/glusterfs/LATEST/Debian/{{ ansible_distribution_release|lower }}/apt {{ ansible_distribution_release|lower }} main"
+    state: present
+  become: true
+  when: ansible_distribution == "Debian"
+
+- name: debian | Installing glusterfs-client
+  apt:
+    name: glusterfs-client
+    state: present
+  become: true

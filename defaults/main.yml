@@ -1,2 +1,27 @@
 ---
 # defaults file for ansible-glusterfs-client
+glusterfs_client_config: false
+
+glusterfs_client_mounts:
+  - mountpoint: /mnt/shareddata
+    src: "{{ glusterfs_client_pri_server+':/shareddata' }}"
+    fstype: glusterfs
+    opts: "defaults,_netdev,backupvolfile-server={{ glusterfs_client_sec_server }}"
+    state: mounted
+
+glusterfs_client_pri_server: "{{ hostvars[groups[glusterfs_server_group][0]]['ansible_'+glusterfs_repl_int]['ipv4']['address'] }}"
+glusterfs_client_sec_server: "{{ hostvars[groups[glusterfs_server_group][1]]['ansible_'+glusterfs_repl_int]['ipv4']['address'] }}"
+
+# Below vars are examples from https://github.com/mrlesmithjr/ansible-glusterfs
+
+# Defines GlusterFS replication interface
+glusterfs_repl_int: enp0s8
+
+# Defines Ansible group which contains GlusterFS servers
+glusterfs_server_group: glusterfs_servers
+
+# Defines bricks and volumes to create
+glusterfs_bricks:
+  - name: shareddata
+    bricks:
+      - "{{ glusterfs_bricks_dir+'/'+'shareddata/brick' }}"

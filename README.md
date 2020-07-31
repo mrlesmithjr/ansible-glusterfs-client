@@ -2,6 +2,7 @@
 
 Ansible role to install/configure GlusterFS Client
 
+> NOTE: Intended to be used with [ansible-glusterfs](https://github.com/mrlesmithjr/ansible-glusterfs) role.
 
 ## Build Status
 
@@ -12,8 +13,6 @@ Ansible role to install/configure GlusterFS Client
 ### Travis CI
 
 [![Build Status](https://travis-ci.org/mrlesmithjr/ansible-glusterfs-client.svg?branch=master)](https://travis-ci.org/mrlesmithjr/ansible-glusterfs-client)
-
-
 
 ## Requirements
 
