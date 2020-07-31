@@ -1,3 +1,15 @@
+commit e778dd02f512d532bd2c31a3ad52c98b1c58ac77
+Author: Larry Smith Jr <mrlesmithjr@gmail.com>
+Date:   Fri Jul 31 14:04:07 2020 -0400
+
+    Fixed Debian package/repo var
+
+commit c8a4771627da03af554f02446ccb5f31370c14c0
+Author: Larry Smith Jr <mrlesmithjr@gmail.com>
+Date:   Fri Jul 31 13:39:39 2020 -0400
+
+    Fixing CentOS8
+
 commit 54d785ed931b2e5ad48ac67e9fe6adad983af5f6
 Author: Larry Smith Jr <mrlesmithjr@gmail.com>
 Date:   Fri Jul 31 13:10:18 2020 -0400
