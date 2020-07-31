@@ -1,0 +1,7 @@
+---
+- name: Example Playbook
+  hosts: all
+  tasks:
+    - name: Include ansible-glusterfs-client
+      include_role:
+        name: ansible-glusterfs-client
