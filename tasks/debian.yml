@@ -22,14 +22,14 @@
 
 - name: debian | Adding GlusterFS Repo Key
   apt_key:
-    url: "{{ glusterfs_debian_repo_key }}"
+    url: "{{ glusterfs_client_debian_repo_key }}"
     state: present
   become: true
   when: ansible_distribution == "Debian"
 
 - name: debian | Adding GlusterFS Repo
   apt_repository:
-    repo: "{{ glusterfs_debian_repo }}"
+    repo: "{{ glusterfs_client_debian_repo }}"
     state: present
   become: true
   when: ansible_distribution == "Debian"
