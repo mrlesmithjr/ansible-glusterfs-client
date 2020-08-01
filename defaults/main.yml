@@ -16,6 +16,8 @@ glusterfs_client_debian_repo: "{{ 'deb '+glusterfs_client_debian_repo_url+'/LATE
 glusterfs_client_pri_server: "{{ hostvars[groups[glusterfs_server_group][0]]['ansible_'+glusterfs_repl_int]['ipv4']['address'] }}"
 glusterfs_client_sec_server: "{{ hostvars[groups[glusterfs_server_group][1]]['ansible_'+glusterfs_repl_int]['ipv4']['address'] }}"
 
+glusterfs_client_ubuntu_repo: "{{ 'ppa:gluster/glusterfs-'+glusterfs_client_version|string }}"
+
 glusterfs_client_version: 7
 
 # Below vars are examples from https://github.com/mrlesmithjr/ansible-glusterfs
