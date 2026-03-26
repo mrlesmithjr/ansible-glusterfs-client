@@ -1,4 +1,7 @@
-# ansible-glusterfs-client
+> [!CAUTION]
+> **This project is archived and no longer maintained.**
+> Archived: 2026-03-26
+> Reason: Use ansible-glusterfs instead (consolidated role)# ansible-glusterfs-client
 
 Ansible role to install/configure GlusterFS Client
 
